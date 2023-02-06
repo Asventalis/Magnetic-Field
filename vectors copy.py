@@ -5,13 +5,14 @@ import matplotlib.animation as animation
 import keyboard
 
 p = 8
-i = 1/p
+i = 2
 n_arrows = 33
 distance = 3
 ring_distance = 2.8
 
 
 p *= 2 if p%2 == 0 else 1
+i /= p*2
 x,y = np.meshgrid(np.linspace(-5,5,n_arrows),np.linspace(-5,5,n_arrows))
 angle, m = np.meshgrid(np.linspace(0,2*np.pi,3*n_arrows),np.linspace(0,0,1))
 
